@@ -1,0 +1,45 @@
+body{
+    background-color: #f4f4f4;
+}
+.items{
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+
+}
+
+.item{
+    width: 390px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+}
+
+.item h3{
+    font-style: italic;
+    color: rgb(123, 123, 123);
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: #fff;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.modal button{
+    right: 0;
+    position: absolute;
+}

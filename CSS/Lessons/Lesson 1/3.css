@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    background-color: rgb(156, 94, 13);
+    border: 2px solid red;
+    
+}
+.rectangle{
+    width: 350px;
+    height: 200px;
+    background-color: rgb(86, 44, 8);
+    border: 2px dashed white;
+}

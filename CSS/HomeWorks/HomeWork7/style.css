@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section{
+    text-align: center;
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(190, 189, 189, 0.7);
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu ul li a{
+    margin: 0 0 0 40px;
+    font-size: 16px;
+}
+
+.header-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(190, 189, 189, 0.7);
+    height: 100%;
+
+}
+
+.header-center h1{
+    font-size: 110px;
+    letter-spacing: 15px;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.header-center div{
+    width: 25%;
+    margin: 0 auto 50px auto;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+.header-center div p{
+    font-size: 20px;
+}
+
+.header-center a{
+    border-radius: 7px;
+    padding: 22px 32px;
+    background-color: #64a19d;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes up{
+    from{top: 100px;}
+    to{top: 0px; opacity: 1;}
+}
+
+.header-center a:hover{
+    background-color: #518884;
+    transition: .4s;
+}
+
+.built{
+    width: 100%;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+    padding: 100px 0 0 0;
+}
+
+.built-center{
+    width: 55%;
+    margin: 0 auto 80px auto;
+}
+
+.built-center h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.built-center p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.built-img{
+    width: 80%;
+    margin: auto;
+}
+
+.built-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery{
+    padding: 200px 150px;
+}
+
+.gallery-top{
+    display: flex;
+}
+
+.gallery-top img{
+    width: 65%;
+}
+
+.gallery-top .right{
+    width: 35%;
+    padding: 200px 20px;
+}
+
+.gallery-top .right p{
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+    margin: 10px 0 0 0;
+}
+
+.gallery-bottom{
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+}
+
+.texts{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 70px;
+}
+
+.texts h1{
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.texts p{
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+}
+
+.images{
+    width: 50%;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+}
+
+.subscribe{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg            );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    padding: 150px 0;
+}
+
+.subscribe i{
+    font-size: 30px;
+}
+
+.subscribe h1{
+    font-size: 33px;
+    color: white;
+    margin: 20px 0 40px 0;
+}
+
+.inputs input{
+    width: 600px;
+    height: 60px;
+    border-radius: 7px;
+    border: 0;
+    margin: 0 20px 0 0;
+    padding: 0 40px;
+    letter-spacing: 3px;
+}
+
+.inputs button{
+    border: 0;
+    border-radius: 7px;
+    padding: 22px 35px;
+    background-color: #64a19d;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 13px;
+    opacity: .8;
+}
+
+footer{
+    text-align: center;
+    background-color: #000;
+    padding: 100px 250px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* background-color: red; */
+
+}
+
+.cards .card{
+    width: 400px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h5{
+    margin: 10px 0 20px 0;
+}
+
+.card hr{
+    width: 70px;
+    border: 0;
+    background-color: #64a19d;
+    height: 3px;
+}
+
+.card p{
+    color: rgba(0, 0, 0, 0.5);
+    margin: 20px 0 0 0;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    gap: 18px;
+}
+
+.icons a i{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding: 12px 0 0 0;
+    border-radius: 100%;
+    color: rgb(95 95 95);
+}
+
+.icons a i:hover{
+    color: #7b7b7b;
+}
+
+footer p{
+    color: rgb(95 95 95);
+}

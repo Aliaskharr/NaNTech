@@ -1,0 +1,27 @@
+body{
+    background-color: #f4f4f4;
+}
+.items{
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.item{
+    width: 390px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+}
+
+.item h3{
+    font-style: italic;
+    color: rgb(123, 123, 123);
+}

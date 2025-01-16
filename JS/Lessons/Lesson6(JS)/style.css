@@ -1,0 +1,13 @@
+.items{
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.item{
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px 0;
+}

@@ -1,0 +1,16 @@
+*{
+   margin: 0; 
+   padding: 0;
+}
+
+.items{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 0 0;
+}
+
+.item{
+    margin: 200px auto 0 auto;
+    border: 10px solid blue;
+    transition: 1s;
+}

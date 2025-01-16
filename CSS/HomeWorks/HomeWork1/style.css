@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    list-style-type: none;
+    justify-content: center;
+}
+
+ul li{
+    display: flex;
+    font-size: 20px;
+    padding: 16px 30px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+ul li i{
+    display: flex;
+    align-items: center;
+}
+
+ul li i svg{
+    width: 18px;
+    margin: 0 10px 0 0;
+    height: 18px;
+}
+.logo{
+    margin: 30px auto;
+}
+
+.bodyy{
+    display: flex;
+    background-color: orange;
+    padding: 70px 40px;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.left h1, .right h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 16px; 
+}
+
+hr{
+    width: 100%;
+    margin: 7px 0
+}
+
+.book{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.book img{
+    width: 32%;
+    box-shadow: 0 0 0 white;
+}
+
+.book p{
+    color: rgb(87, 87, 87);
+    line-height: 25px;
+    text-align:justify;
+    width: 40%;
+    font-size: 14px;
+}
+
+.right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 22%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+}
+
+.images img{
+    /* width: 55%; */
+    height: auto;
+    margin: 10px 0;
+}
+
+.width100{
+    width: 70%;
+}
+
+.width50{
+    width: 50%;
+} 

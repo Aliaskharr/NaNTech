@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: #6c757d;
+    font-size: 15px;
+}
+
+h1{
+    margin: 0 0 20px 0;
+}
+
+header{
+    background: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav img{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 0 0 35px;
+    
+}
+
+nav ul li a{
+    color: rgb(227 227 227);
+}
+
+.menu-icon{
+    display: none !important;
+}
+
+.header-center{
+    padding: 190px 0;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    color: white;
+}
+
+.header-center h1{
+    font-size: 35px;
+    font-style: italic;
+    margin: 0 0 20px 0;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+}
+
+.header-center p{
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0 0 80px 0;
+    color: white;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.header-center a{
+    background-color: #ffc800;
+    padding: 23px 40px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: bolder;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes up{
+    from{top: 100px;}
+    to{top: 0px; opacity: 1;}
+}
+
+
+section{
+    text-align: center;
+    padding: 80px;
+}
+
+section h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section > p{
+    font-style: italic;
+}
+
+.services-container{
+    background-color: rgb(248 249 250);
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto 0 auto;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+
+.service{
+    width: 33.33%;
+    padding: 0 20px;
+}
+
+.service p{
+    line-height: 25px;
+}
+
+.service i{
+    background-color: #ffc800;
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    padding: 30px 0 0 0;
+    border-radius: 100%;
+    margin: 0 0 20px 0;
+}
+
+.service h1{
+    font-size: 27px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto 0 auto;
+    width: 95%;
+}
+
+.item{
+    width: 32%;
+    background-color: rgb(248 249 250);
+    padding: 0 0 20px 0;
+    margin: 0 0 30px 0;
+}
+
+.item h2{
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.item img{
+    width: 100%;
+}
+
+.team{
+    background-color: rgb(248 249 250);
+}
+
+.personals{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto 80px auto;
+    width: 80%;
+    gap: 50px;
+}
+
+.personal{
+    width: 20%;
+}
+
+.personal img{
+    width: 100%;
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.personal h2{
+    margin: 20px 0 6px 0;
+    font-weight: 700;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+    
+}
+
+.icons i{
+    width: 40px;
+    height: 40px;
+    padding: 12px 0 0 0;
+    border-radius: 100%;
+    background-color: #212529;
+}
+
+.companies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 60px 100px;
+}
+
+.companies a{
+    width: 25%;
+    margin: 0;
+}
+
+.companies a img{
+    width: 100%;
+    height: 45px;
+}
+
+.contact{
+    background-color: #212529;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact h1{
+    color: white;
+}
+
+.contact-elements{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 60px auto 75px auto;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    gap: 25px;
+}
+
+.inputs input{
+    height: 65px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 0 0 0 20px;
+}
+
+.inputs input::placeholder, textarea::placeholder{
+    color: #c9c9c9;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+textarea{
+    width: 49%;
+    height: 244px;
+    padding: 20px 0 0 20px;
+    margin: 0;
+}
+
+
+.contact a{
+    background-color: #ffc800;
+    padding: 23px 40px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: bolder;
+    color: white;
+    opacity: .7;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer .icons{
+    margin: 0;
+    gap: 10px;
+}
+
+footer .icons i{
+    padding: 13px;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+@media(max-width: 768px){
+
+    nav{
+        background-color: #212529;
+        padding: 20px 0;
+    }
+
+    nav img{
+        width: 150px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex !important;
+        color: #6c757d;
+        border: 1px solid #6c757d;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        gap: 10px;
+    }
+
+    .menu-icon p{
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .header-center{
+        padding: 100px 0;
+        text-align: center;
+        margin: auto;
+        width: 70%;
+        color: white;
+    }
+
+    .header-center h1{
+        font-size: 23px;
+    }
+
+    .header-center p{
+        font-size: 50px;
+        margin: 0 0 50px 0;
+    }
+
+    .service{
+        width: 85%;
+        padding: 20px 0 ;
+    }
+
+    .items{
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .item{
+        width: 46%;
+        margin: 0 0 0 0;
+    }
+
+    .personals{
+        width: 35%;
+    }
+
+    .personal{
+        width: 100%;
+    }
+
+    .companies a{
+        margin: 10px 0;
+        width: 50%;
+    }
+
+    .contact-elements{
+        flex-direction: column;
+    }
+    
+    .inputs{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+        margin: 35px 0;
+        height: 150px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

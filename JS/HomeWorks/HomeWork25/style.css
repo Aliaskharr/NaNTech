@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.gameBlock{
+    width: 700px;
+    height: 500px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: auto;
+    position: relative;
+}
+
+.ball{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+}
+
+.options{
+    background-color: gray;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.options button{
+    padding: 10px;
+    font-size: 15px;
+}

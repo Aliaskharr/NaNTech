@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.rectangle{
+    width: 40%;
+    height: 250px;
+    background-color: blue;
+    margin: 10px 0;
+}

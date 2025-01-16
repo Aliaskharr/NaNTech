@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.store{
+    padding: 155px 0;
+    background: rgb(150,36,36);
+    background: linear-gradient(90deg, rgba(150,36,36,1) 0%, rgba(121,9,96,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+i{
+    color: #fff;
+}
+
+.basket-icon-container{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.basket-icon-container:hover{
+    cursor: pointer;
+}
+
+.basket-icon-container:hover .fa-cart-shopping{
+    color: #fff;
+}
+
+.basket-icon{
+    position: relative;
+}
+
+.basket-icon > i{
+    font-size: 30px;
+    color: black;
+}
+
+.basket-number{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -10px;
+    text-align: center;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    width: 250px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.item-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.item-top i{
+    font-size: 25px;
+}
+
+.image-container{
+    width: 100%;
+    text-align: center;
+}
+
+.image-container img{
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item-about{
+    color: white;
+    background-color: rgb(58, 58, 58);
+    border-radius: 25px;
+    padding: 15px;
+    position: relative;
+    height: 260px;
+}
+
+.item-about .fa-heart{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.item-about .fa-heart:hover{
+    cursor: pointer;
+}
+
+.item-about > p{
+    margin: 10px 0;
+}
+
+.item-about .item-about-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-about .item-about-bottom>p{
+    font-size: 20px;
+}
+
+.add{
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 11px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(48, 48, 48);
+}
+
+.add:hover{
+    background-color: #fff;
+    color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+.add:hover .fa-chevron-right{
+    color: rgb(58, 58, 58) !important;
+}
+
+.add p{
+    font-size: 15px;
+}
+
+.basket-container{
+    width: 1000px;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: -1000px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 40px;
+    z-index: 10;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.basket{
+    position: relative;
+}
+
+.fa-xmark{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.basket-items{
+    max-height: 65vh;
+    overflow: auto;
+    margin: 20px 0 0 0;
+}
+
+.basket-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.basket-item:hover{
+    background-color: gray;
+}
+
+.basket-item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.basket-item p{
+    font-size: 20px;
+}
+
+.basket-item i:hover{
+    cursor: pointer;
+}
+
+.basket-bottom{
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total-price{
+    font-size: 30px;
+}
+
+.clear-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 15px 0 0 0;
+}
+
+.clear-all:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.clear-all i{
+    font-size: 22px;
+}
+
+.clear-all p{
+    font-size: 30px;
+}
+
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.red{
+    color: red;
+}

@@ -1,0 +1,20 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: wheat;
+    margin: 20px auto;
+}
+
+.images{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 600px;
+}
+
+.images img, .container img{
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+}

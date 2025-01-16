@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+}
+
+header{
+    background: linear-gradient(rgba(34, 54, 75, 0.6), rgba(34, 54, 75, 0.6)), url(https://themespacial.netlify.app/assets/img/unsplash/1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+section{ padding: 100px; text-align: center;}
+  
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav ul li{ display: inline-block; padding: 2px 20px; }
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav i{ font-size: 10px; }
+
+nav ul li:last-child a{
+    background-color: blueviolet;
+    padding: 10px 13px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+nav ul li:last-child a:hover{
+    background-color: rgb(101, 39, 160);
+    transition: .2s;
+
+}
+
+.header-center{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    color: #fff;
+    text-align: center;
+}
+
+.header-center h1{
+    font-size: 60px;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.header-center p{
+    font-size: 26px;
+    margin: 30px 0 50px 0;
+    animation-name: up2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.header-center a{
+    display: inline-block;
+    background-color: #34bd91;
+    width: 270px;
+    height: 55px;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes up{
+    from{top: 100px;}
+    to{top: 0px; opacity: 1;}
+}
+
+@keyframes up2{
+    from{top: 100px;}
+    to{top: 30px; opacity: 1;}
+}
+
+.header-center a:hover{
+    background-color: #299d78;
+    transform: translateY(-5px);
+    transition: .4s;
+}
+
+.brands{
+    padding: 100px;
+}
+
+.brands > h1{
+    font-size: 15px;
+    color: rgb(32 131 254);
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.brands > img{
+    width: 100%;
+    margin: 0 0 150px 0;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article{
+    width: 32%;
+    text-align: left;
+    padding: 60px 0;
+}
+
+.article i{
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgb(32 131 254);
+    border-radius: 100%;
+}
+
+.article h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.article p{
+    line-height: 25px;
+    font-size: 18px;
+    color: #8FA2BF;
+}
+
+.explore, .trial{
+    background-color: rgb(246 249 252);
+}
+
+.trial{
+    color: #1f2c73;
+}
+
+.trial h1{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.trial > p{
+    font-size: 18px;
+    margin: 20px 0 80px 0;
+}
+
+.plans{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan{
+    background-color: #fff;
+    width: 31%;
+    padding: 20px 30px;
+    height: 100%;
+}
+
+.plan > h2{ font-weight: 400; }
+
+.plan > p{
+    font-size: 35px;
+    margin: 15px 0 20px 0;
+}
+
+.plan > p span{ font-size: 55px; }
+
+.plan-infos{ margin: 30px 0 40px 0; }
+
+.plan-info{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.plan-info i{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(235 248 244);
+    margin: 0 20px 0 0;
+    opacity: .7;
+}
+
+.plan-info p{ font-size: 19px; }
+
+.plan a{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #e9f3ff;
+    color: #2083fe;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.plan a:hover{ transform: translateY(-5px); transition: .4s; }
+
+#bg-primary{ background-color: #2083fe; color: #fff; }
+
+.questions{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 180px 0;
+
+}
+
+.question{
+    width: 50%;
+    padding: 30px 50px 30px 0;
+    text-align: left;
+}
+
+.question h2{
+    color:#1f2c73;
+    font-weight: 400;
+}
+
+.question p{
+    color: #6b819c;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    line-height: 30px;
+}
+
+.started{ display: flex; justify-content: center; }
+
+.started h1{ margin: 0 30px 0 0; font-weight: 400; }
+
+.started-buttons{ position: relative; width: 450px; }
+
+.started-buttons a{
+    width: 200px;
+    padding: 15px 0;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #1f2c73;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 0;
+    transition: .2s;
+}
+
+.started-buttons a:nth-child(1){ left: 0; top: 0;}
+
+.started-buttons a:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    /* transform: translateY(-10px); */
+    top: -10px;
+    transition: .4s;
+}
+
+footer{
+    background-color: #1e2e50;
+    padding: 100px 200px;
+    text-align: center;
+}
+
+.abouts{ display: flex; justify-content: space-between; }
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.about h3{
+    color: #18b7ff;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.about a{
+    text-decoration: none;
+    color: #fff;
+    margin: 7px 0;
+    font-size: 18px;
+}
+
+.about a:hover{ text-decoration: dashed; }
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.icons a i{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 15px 0 0 0;
+    border-radius: 100%;
+}
+
+.icons a{ transition: .6s; }
+
+.icons a:hover{ transform: translateY(-10px); }
+
+footer > p{ color: #8fa2bf; margin: 30px 0; }

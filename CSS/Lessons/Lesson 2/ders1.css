@@ -1,0 +1,44 @@
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    align-items: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    padding: 13px;
+    border-radius: 0.2cm;
+}
+
+.header{
+    width: 100%;
+    background-image:linear-gradient(rgba(44, 52, 65, 0.2),rgba(39, 43, 67, 0.2)),url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+/* .header-box{
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.header-box h1{
+    font-size: 50px;
+}
+.header-box p{
+    font-size: 20px;
+    margin-top: 20px;
+} */

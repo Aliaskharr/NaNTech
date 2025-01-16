@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clock{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 324px 0;
+
+}
+
+.clock div{
+    font-size: 70px;
+    color: #fff;
+}

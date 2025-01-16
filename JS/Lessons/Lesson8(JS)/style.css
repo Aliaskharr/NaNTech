@@ -1,0 +1,21 @@
+.top{
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px 50px;
+    background-color: gray;
+}
+
+.top img{
+    width: 100%;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(246, 181, 61);
+}
+
+.gallery img{
+    width: 200px;
+}

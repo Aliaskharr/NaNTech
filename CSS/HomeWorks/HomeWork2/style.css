@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 160px;
+    background-color: rgb(248 249 250);
+    width: 100%;
+}
+
+.art{
+    width: 33%;
+    padding: 90px;
+    text-align: center;
+}
+
+.art i{
+    font-size: 50px;
+    color: rgb(13 110 253);
+}
+
+h1, h3{
+    margin: 40px 0 15px 0;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(82, 82, 82);
+}
+.second{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block-text, .block-img{
+    width: 50%;
+    height: 450px;
+}
+
+.block-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.block-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+}
+
+.thirth{
+    padding: 80px;
+    background-color: rgb(248 249 250);
+    text-align: center; 
+}
+
+.thirth-inside{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.people{
+    width: 30%;
+    padding: 0 40px;
+}
+
+.people img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    box-shadow: 0 3px 2px rgb(165, 165, 165);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a:nth-child(1) {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+
+.menu a:nth-child(2) {
+    padding: 15px 20px;
+    background-color: rgb(69, 69, 255);
+    color: white;
+    border-radius: 5px;
+}
+
+.header{
+    background-image: linear-gradient(rgba(21, 54, 100, 0.5), rgba(21, 54, 100, 0.5)), url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header div{
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: relative;
+
+}
+
+@keyframes up{
+    from{top: 100px;}
+    to{top: 0px; opacity: 1;}
+}
+
+.header div h1{
+    font-size: 50px;
+}
+
+.bottom{
+    height: 350px;
+}
+
+.bottom div h1{
+    font-size: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 100px;
+    width: 100%;
+}
+
+.left ul li, .right ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.left ul li a{
+    color: #448af5;
+    font-weight: 400;
+}
+
+.left p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.right ul li a i{
+    font-size: 28px;
+    margin: 0 0 0 17px;
+}
+
+.right ul li a i:hover{
+    color: #12376e;
+}
+
