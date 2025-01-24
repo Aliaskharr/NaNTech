@@ -62,7 +62,9 @@ $(".modalEditBtn").click(function () {
 $("tbody").on("click", ".removeBtn", function () {
     let count = 0;
     $(this).parent().parent().remove();
-    
+    $("tbody tr").each(function() {
+        $(this).children().eq(0).html(count+=1);
+    });
     
 });
 
