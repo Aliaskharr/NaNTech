@@ -113,5 +113,4 @@ $("select").change(function() {
             }
         }
     }
-    
 })
