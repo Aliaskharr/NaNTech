@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box !important;
+}
+
+nav button{
+    padding: 13px !important;
+}
+
+.header-container{
+    background-image: linear-gradient(rgba(21, 54, 100, 0.5), rgba(21, 54, 100, 0.5)), url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 450px;
+}
+
+.first i{
+    font-size: 50px;
+}
+
+.pad{
+    padding: 150px 100px;
+}
+
+.second img{
+    height: 450px;
+}
+
+.fourth{
+    background-image: linear-gradient(rgba(21, 54, 100, 0.5), rgba(21, 54, 100, 0.5)), url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 400px;
+}
+
+footer i{
+    font-size: 30px;
+    margin: 0 0 0 20px;
+}
+
+li{
+    list-style-type: none;
+}
