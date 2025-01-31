@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box !important;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-center{
+    padding: 150px 0;
+}
+
+.header-center h1{
+    font-size: 110px;
+    letter-spacing: 15px;
+    color: rgb(204, 204, 204);
+}
+
+.header-center button{
+    font-size: 14px;
+}
+
+.first{
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.first-center{
+    padding: 0 380px;
+}
+
+.second{
+    padding: 150px;
+}
+
+.subscribe{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg            );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    padding: 150px 0;
+}
+
+.subscribe i{
+    font-size: 30px;
+    color: #fff;
+}
+
+footer{
+    padding: 150px;
+}
+
+.icons{
+    margin: 80px auto;
+}
+
+.icons i{
+    font-size: 20px;
+    color: #646464;
+}
