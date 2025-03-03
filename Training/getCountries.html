@@ -12,7 +12,7 @@
     <a id="downloadAnchorElem" style="display:none"></a>
 
     <script>
-        let codess =[]
+        let codess = []
         let country = {
         }
         let countries = [];
@@ -34,49 +34,28 @@
                 .sort((a, b) => a.localeCompare(b));
 
             data.forEach(e => {
-                // console.log(e.idd.suffixes);
-                // codes = e.idd.suffixes;
-                codess.push(e.idd.suffixes)
-                
-                country = {
-                    name: e.name.common,
-                    nameCode: e.fifa,
-                    flag: e.flags.png,
-                    phoneCode: `${e.idd.root + e.idd.suffixes}`
+                if (e.idd.suffixes != undefined) {
+                    country = {
+                        name: e.name.common,
+                        nameCode: e.fifa,
+                        flag: e.flags.png,
+                        phoneCode: `${e.idd.root + e.idd.suffixes[0]}`
+                    }
                 }
-                // console.log(country);
-                
-            });
+                countries.push(country)
 
-            // console.log(data);
-            // console.log(countries);
+            });
+            console.log(countries);
+            
             var myJsonString = JSON.stringify(countries);
-            // console.log(myJsonString);
 
             var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(myJsonString);
-            var dlAnchorElem = document.getElementById('downloadAnchorElem');
-            dlAnchorElem.setAttribute("href", dataStr);
-            dlAnchorElem.setAttribute("download", "scene.json");
-            dlAnchorElem.click();
+            // var dlAnchorElem = document.getElementById('downloadAnchorElem');
+            // dlAnchorElem.setAttribute("href", dataStr);
+            // dlAnchorElem.setAttribute("download", "scene.json");
+            // dlAnchorElem.click();
 
         });
-
-        setTimeout(() => {
-            codess.forEach(e => {
-                if (e != undefined) {
-                    console.log(e[0]);
-                }
-                
-                let sp = []
-                sp.push(codess[0])
-            });
-        },1000)
-        
-        
-
-
-
-
 
     </script>
 </body>

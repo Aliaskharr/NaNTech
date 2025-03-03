@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Animation</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 100px;
+            background-color: #ddd;
+            position: relative;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            transition: left 2s ease-in-out; /* 2 saniyə ərzində yumşaq keçid */
+        }
+
+        .moved {
+            left: 250px; /* Konteynerin sağ tərəfinə keçsin */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" onclick="toggleMove()">
+        <div class="circle"></div>
+    </div>
+
+    <script>
+        function toggleMove() {
+            document.querySelector('.circle').classList.toggle('moved');
+        }
+    </script>
+
+</body>
+</html>
