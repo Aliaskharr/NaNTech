@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
-const App = () => {
-
-    return(
+import Navbar from './navbar'
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import Profile from "./Profile";
+function App() {
+    return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Navbar />}>
