@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Profile from "./Profile";
+import Courses from './Courses'
 function App() {
     return (
         <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/profile/:username" element={<Profile />} />
+                    <Route path="/courses" element={<Courses />} />
                 </Route>
             </Routes>
         </BrowserRouter>
