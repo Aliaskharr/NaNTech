@@ -4,24 +4,24 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 const Navbar = () => {
     return (
         <>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <div class="container py-3">
-                    <a class="navbar-brand" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div className="container py-3">
+                    <a className="navbar-brand" href="#">Logo</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item me-5">
+                    <div className="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul className="navbar-nav ms-auto">
+                            <li className="nav-item me-5">
                                 <NavLink className="nav-link" to="/">Home</NavLink>
                             </li>
-                            <li class="nav-item me-5">
+                            <li className="nav-item me-5">
                                 <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
-                            <li class="nav-item me-5">
+                            <li className="nav-item me-5">
                                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <NavLink className="nav-link" to="/courses">Courses</NavLink>
                             </li>
                         </ul>

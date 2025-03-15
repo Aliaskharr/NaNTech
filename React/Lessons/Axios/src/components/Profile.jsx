@@ -12,8 +12,8 @@ const Profile = () => {
     
     return (
         <div className='container'>
-            <div class="card">
-                <div class="card-header">{params.username}</div>
+            <div className="card">
+                <div className="card-header">{params.username}</div>
             </div>
         </div>
 
