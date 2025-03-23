@@ -3,8 +3,11 @@ import React, { Component } from 'react'
 class Course extends Component {
 
   removeCard = () => {
-    console.log(this.props.course.courseId);
     this.props.removeCourse(this.props.course.courseId)
+  }
+
+  editCardd = () => {
+    this.props.editCard(this.props.course.courseId);
   }
 
   render(props) {
@@ -15,6 +18,7 @@ class Course extends Component {
             <div className="card-body overflow-auto">{this.props.course.courseDescription}</div>
             <div className="card-footer">
               <button className='btn btn-sm btn-danger' onClick={this.removeCard}>Remove</button>
+              <button className='btn btn-sm btn-success ms-2' onClick={this.editCardd}>Edit</button>
             </div>
         </div>
     </div>
